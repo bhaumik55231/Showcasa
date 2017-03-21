@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.addtheatreVO" table="ADD_THEATRE_VO">
+        <id name="theatre_id" type="int">
+            <column name="theatre_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="theatre_name" type="java.lang.String">
+            <column name="THEATRE_NAME" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="admin_name" type="java.lang.String">
+            <column name="Admin_Name" />
+        </property>
+        <property name="screen" type="java.lang.Integer">
+        <column name="SCREEN"></column>
+        </property>
+        <property name="cityid" type="java.lang.String">
+        <column name="CITY"></column>
+        </property>
+        <property name="latitude" type="java.lang.Integer">
+        <column name="LATITUDE"></column>
+        </property>
+        <property name="longitude" type="java.lang.Integer">
+        <column name="LONGITUDE"></column>
+        </property>
+        <property name="multiplex_id" type="java.lang.Integer">
+        <column name="MULTIPLEX_ID"></column>
+        </property>
+    </class>
+</hibernate-mapping>

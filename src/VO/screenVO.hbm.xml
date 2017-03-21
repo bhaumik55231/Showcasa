@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.screenVO" table="screen">
+        <id name="show_id" type="int">
+            <column name="show_id" />
+            <generator class="increment" />
+        </id>
+        <property name="start_hr" type="int">
+            <column name="start_hr" />
+        </property>
+        <property name="start_min" type="int">
+            <column name="start_min" />
+        </property>
+        <property name="price1" type="int">
+            <column name="price1" />
+        </property>
+        <property name="price2" type="int">
+            <column name="price2" />
+        </property>
+        <property name="price3" type="int">
+            <column name="price3" />
+        </property>
+         <property name="movie_id" type="int">
+            <column name="movie_id" />
+        </property>
+        <property name="start_date" type="int">
+            <column name="start_date" />
+        </property>
+        <property name="start_month" type="int">
+            <column name="start_month" />
+        </property>
+        <property name="start_year" type="int">
+            <column name="strat_year" />
+        </property>
+       
+        <property name="movie_name" type="java.lang.String">
+            <column name="movie_NAME" />
+        </property>
+        <property name="admin_name" type="java.lang.String">
+            <column name="admin_name" />
+        </property>
+        <property name="theatre_id" type="java.lang.Integer">
+            <column name="theatre_id" />
+        </property>
+        <property name="screen_id" type="java.lang.Integer">
+            <column name="screen_id" />
+        </property>
+        <property name="multiplex_id" type="java.lang.Integer">
+            <column name="multiplex_id" />
+        </property>
+         <property name="show_status" type="java.lang.Integer">
+            <column name="Status" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

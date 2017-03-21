@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+
+<hibernate-configuration>
+<session-factory>
+  <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3333/showcasa_data</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="show_sql">true</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  
+  
+  	<mapping resource="VO/countryVO.hbm.xml"></mapping>
+	<mapping resource="VO/stateVO.hbm.xml"></mapping>
+	<mapping resource="VO/cityVO.hbm.xml"></mapping>
+	<mapping resource="VO/userRegistrationVO.hbm.xml"></mapping>
+	<mapping resource="VO/reviewMovieVO.hbm.xml"></mapping>
+	<mapping resource="VO/multiplexRegistrationVO.hbm.xml"></mapping>
+	<mapping resource="VO/fileUpVO.hbm.xml"></mapping>
+	<mapping resource="VO/addtheatreVO.hbm.xml"></mapping>
+  	<mapping resource="VO/loginVO.hbm.xml"></mapping>
+  	<mapping resource="VO/multiplexAdminVO.hbm.xml"></mapping>
+  	<mapping resource="VO/itemUpVO.hbm.xml"></mapping>
+  	<mapping resource="VO/itemVO.hbm.xml"></mapping>
+  	<mapping resource="VO/addMovieVO.hbm.xml"></mapping>
+  	<mapping resource="VO/screenVO.hbm.xml"></mapping>
+  	<mapping resource="VO/ticketVO.hbm.xml"></mapping>
+  	<mapping resource="VO/updateUserRegistrationVO.hbm.xml"></mapping>
+  	<mapping resource="VO/contactUsVO.hbm.xml"></mapping>
+  	<mapping resource="VO/transactionVO.hbm.xml"></mapping>
+  	<mapping resource="VO/revenueVO.hbm.xml"></mapping>
+  	<mapping resource="VO/walletVO.hbm.xml"></mapping>
+  	<mapping resource="VO/movieRatingVO.hbm.xml"></mapping>
+  	<mapping resource="VO/itemBookingVO.hbm.xml"></mapping>
+  	<mapping resource="VO/itemAgent.hbm.xml"></mapping>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.itemAgent" table="item_Agent">
+        <id name="item_agent_id" type="int">
+            <column name="item_agent_id" />
+            <generator class="increment" />
+        </id>
+        <property name="item_username" type="java.lang.String">
+            <column name="item_userNAME" />
+        </property>
+        <property name="item_agent_thatre" type="java.lang.Integer">
+            <column name="item_agent_theatre" />
+        </property>
+        <property name="added_by" type="java.lang.String">
+            <column name="Added_by" />
+        </property>
+        <property name="login_id" type="java.lang.Integer">
+        <column name="login_id"></column>
+        </property>
+    </class>
+</hibernate-mapping>

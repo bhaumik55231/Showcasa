@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.userRegistrationVO" table="ADD_USER_VO">
+        <id name="user_id" type="int">
+            <column name="USER_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="first_name" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+        <property name="last_name" type="java.lang.String">
+            <column name="LAST_NAME" />
+            </property>
+            <property name="email_id" type="java.lang.String">
+            <column name="EMAIL_ID" />
+            </property>
+            <property name="mobile_number" type="java.lang.Long">
+            <column name="MOBILE_NUMBER" />
+            </property>
+            <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+            </property>
+            <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+            </property>
+            
+            
+            
+        <many-to-one name="country_id" class="VO.countryVO" fetch="join">
+            <column name="COUNTRY_id" />
+        </many-to-one>
+        <many-to-one name="state_id" class="VO.stateVO" fetch="join">
+            <column name="STATE_id" />
+        </many-to-one>
+        <many-to-one name="city_id" class="VO.cityVO" fetch="join">
+            <column name="CITY_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.itemVO" table="item_VO">
+        <id name="item_id" type="int">
+            <column name="Item_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="item_name" type="java.lang.String">
+            <column name="item_NAME" />
+        </property>
+        <property name="item_description" type="java.lang.String">
+            <column name="item_Description" />
+            </property>
+            <property name="item_seller" type="java.lang.String">
+            <column name="Item_Seller" />
+            </property>
+            <property name="item_price" type="java.lang.Float">
+            <column name="Item_Price" />
+            </property>
+            <property name="file_name" type="java.lang.String">
+            <column name="File_Name" />
+            </property>
+            <property name="en_file_name" type="java.lang.String">
+            <column name="Encrypted_File_Name" />
+            </property>
+            <property name="theatre_id" type="java.lang.Integer">
+            <column name="Theatre_ID" />
+            </property>
+    </class>
+</hibernate-mapping>

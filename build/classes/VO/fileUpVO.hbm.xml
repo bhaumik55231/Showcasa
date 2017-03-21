@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0/EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="VO.fileUpVO" table="FileUpload">
+
+<id name="file_id" type="int" column="File_Id">
+			<generator class="increment"/>
+</id>
+		
+		<property name="file_name" type="java.lang.String">
+			<column name="FileName"/>
+		</property>
+		<property name="encrypted_file_name" type="java.lang.String">
+			<column name="EnFileName"/>
+		</property>
+			
+		<many-to-one name="itemUpVO" class="VO.itemUpVO">
+			<column name="item_id"/>
+		</many-to-one>
+
+</class> 
+</hibernate-mapping>

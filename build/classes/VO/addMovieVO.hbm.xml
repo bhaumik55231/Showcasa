@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.addMovieVO" table="ADD_MOVIE_VO">
+        
+        <id name="movie_id" type="int">
+            <column name="MOVIE_ID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="movie_name" type="java.lang.String">
+            <column name="MOVIE_NAME" />
+        </property>
+        
+        <property name="duration" type="int">
+            <column name="DURATION" />
+        </property>
+        
+        <property name="file_name" type="java.lang.String">
+            <column name="FILE_NAME" />
+        </property>
+        
+        <property name="encrypted_name" type="java.lang.String">
+            <column name="ENCRYPTED_NAME" />
+        </property>
+        
+        <property name="age_restriction" type="int">
+            <column name="AGE_RESTRICTION" />
+        </property>
+        
+        <property name="actor_1" type="java.lang.String">
+            <column name="ACTOR_1" />
+        </property>
+        
+        <property name="actor_2" type="java.lang.String">
+            <column name="ACTOR_2" />
+        </property>
+        
+        <property name="actor_3" type="java.lang.String">
+            <column name="ACTOR_3" />
+        </property>
+        
+        <property name="actor_4" type="java.lang.String">
+            <column name="ACTOR_4" />
+        </property>
+        
+        <property name="actor_5" type="java.lang.String">
+            <column name="ACTOR_5" />
+        </property>
+        
+        <property name="category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+        
+        <property name="director" type="java.lang.String">
+            <column name="DIRECTOR" />
+        </property>
+        
+        <property name="writer" type="java.lang.String">
+            <column name="WRITER" />
+        </property>
+        
+        <property name="release_date" type="java.lang.String">
+            <column name="RELEASE_DATE" />
+        </property>
+        
+        <property name="youtube_link" type="java.lang.String">
+            <column name="YOUTUBE_LINK" />
+        </property>
+        
+        <property name="plot" type="java.lang.String">
+            <column name="PLOT" />
+        </property>
+        
+        <property name="admin_name" type="java.lang.String">
+            <column name="ADMIN_NAME" />
+        </property>
+        
+        
+        <property name="home_value" type="int">
+            <column name="HOME_VALUE" />
+        </property>
+        
+         <property name="number_user_rating" type="int">
+            <column name="Number_Ratings" />
+        </property>
+        
+        <property name="rating" type="double">
+            <column name="Avg_rating" />
+        </property>
+        
+        
+        
+    </class>
+</hibernate-mapping>

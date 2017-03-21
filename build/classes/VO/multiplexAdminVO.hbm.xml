@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.multiplexAdminVO" table="ADD_Multiplex_Admin_VO">
+        <id name="id" type="int">
+            <column name="Admin_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="multiplex_id" type="java.lang.Integer">
+            <column name="Multiplex_id" />
+        </property>
+        <property name="user_name" type="java.lang.String">
+            <column name="User_Name" />
+            </property>
+            <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+            </property>
+            <property name="admin_name" type="java.lang.String">
+            <column name="Admin_Name_Granted" />
+            </property>
+            <property name="timestamp" type="java.lang.String">
+            <column name="TimeStamp" />
+            </property>
+    </class>
+</hibernate-mapping>

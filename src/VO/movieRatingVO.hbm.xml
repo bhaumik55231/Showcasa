@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.movieRatingVO" table="Movie_Rating">
+        <id name="rating_id" type="int">
+            <column name="rating_id" />
+            <generator class="increment" />
+        </id>
+        <property name="login_id" type="int">
+            <column name="Login_id" />
+        </property>
+        
+        <property name="movie_id" type="int">
+            <column name="movie_id" />
+        </property>
+        <property name="rating_value" type="double">
+            <column name="Rating_value" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

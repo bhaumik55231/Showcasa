@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.transactionVO" table="Transaction">
+        
+        <id name="tr_id" type="int">
+            <column name="Tr_ID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="transaction_id" type="java.lang.String">
+            <column name="Transaction_ID" />
+        </property>
+        
+        <property name="booking_number" type="java.lang.Long">
+            <column name="Booking_Number" />
+        </property>
+        
+        <property name="booking_email" type="java.lang.String">
+            <column name="Booking_Email" />
+        </property>
+        
+        <property name="user_id" type="int">
+            <column name="User_ID" />
+        </property>
+         
+        <property name="price" type="int">
+            <column name="Price" />
+        </property>
+         <property name="success" type="int">
+            <column name="success" />
+        </property>
+           
+        <property name="show_id" type="int">
+            <column name="Show_ID" />
+        </property>
+        
+        <property name="item_price" type="int">
+            <column name="item_price" />
+        </property>
+        
+        <property name="grand_total" type="int">
+            <column name="grand_total" />
+        </property>
+         <property name="payment_method" type="int">
+            <column name="Payment_Method" />
+        </property>
+        
+        <property name="timestamp" type="java.sql.Timestamp">
+            <column name="Timestamp" />
+        </property>
+        
+       <property name="ticket_list" type="java.lang.String">
+        	<column name="ticket_list" />
+        </property> 
+        
+         <property name="total_tickets" type="int">
+            <column name="Total_Tickets" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

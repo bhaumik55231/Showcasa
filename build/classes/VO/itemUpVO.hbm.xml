@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0/EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="VO.itemUpVO" table="Item_Add">
+
+<id name="item_id" type="int" column="Item_Id">
+			<generator class="increment"/>
+</id>
+		
+		<property name="item_name" type="java.lang.String">
+			<column name="ItemName"/>
+		</property>
+		<property name="item_description" type="java.lang.String">
+			<column name="ItemDescription"/>
+		</property>
+		<property name="file_name" type="java.lang.String">
+			<column name="file_name"/>
+		</property>
+		<property name="en_file_name" type="java.lang.String">
+			<column name="en_file_name"/>
+		</property>
+		<property name="item_price" type="int">
+			<column name="ItemPrice"/>
+		</property>
+		<property name="theatre_id" type="java.lang.Integer">
+			<column name="TheatreID"/>
+		</property>
+		
+
+</class> 
+</hibernate-mapping>

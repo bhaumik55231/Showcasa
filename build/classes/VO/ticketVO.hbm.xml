@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.ticketVO" table="ticket">
+        <id name="ticket_id" type="int">
+            <column name="ticket_id" />
+            <generator class="increment" />
+        </id>
+        <property name="ticket_tag" type="java.lang.String">
+            <column name="ticket_tag" />
+        </property>
+        
+        <property name="show_id" type="java.lang.Integer">
+            <column name="show_id" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

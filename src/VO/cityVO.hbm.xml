@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.cityVO" table="ADD_CITY_VO">
+        <id name="city_id" type="int">
+            <column name="CITY_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="city_name" type="java.lang.String">
+            <column name="CITY_NAME" />
+        </property>
+        <property name="city_description" type="java.lang.String">
+            <column name="CITY_DESCRIPTION" />
+        </property>
+        <many-to-one name="country_id" class="VO.countryVO" fetch="join">
+            <column name="COUNTRY_id" />
+        </many-to-one>
+        <many-to-one name="state_id" class="VO.stateVO" fetch="join">
+            <column name="STATE_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

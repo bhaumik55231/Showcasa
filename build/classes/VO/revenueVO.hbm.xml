@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.revenueVO" table="Revenue">
+        
+        <id name="revenue_id" type="int">
+            <column name="Revenue_ID" />
+            <generator class="increment" />
+        </id>
+        
+          <property name="multiplex_id" type="int">
+            <column name="Multiplex_ID" />
+        </property>
+         
+        <property name="theatre_id" type="int">
+            <column name="Theatre_ID" />
+        </property>
+        
+        <property name="screen_id" type="int">
+            <column name="Screen_ID" />
+        </property>
+              
+        
+        <property name="show_id" type="int">
+            <column name="Show_ID" />
+        </property>
+        
+         <property name="total_revenue" type="int">
+            <column name="Total_Revenue" />
+        </property>
+        
+        <property name="timestamp" type="java.sql.Timestamp">
+            <column name="Timestamp" />
+        </property>
+        
+         <property name="total_tickets" type="int">
+            <column name="Total_Tickets" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
